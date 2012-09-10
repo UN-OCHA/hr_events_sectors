@@ -16,14 +16,6 @@ function hr_events_sectors_features_override_default_overrides() {
 
   // Exported overrides for: views_view
   $overrides["views_view.events.display|page|display_options|filters|field_clusters_tid|expose|label"] = 'Sector';
-  $overrides["views_view.events.display|page|display_options|filters|field_clusters_tid|expose|remember_roles"] = array(
-    2 => '2',
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    4 => 0,
-    3 => 0,
-  );
 
  return $overrides;
 }
