@@ -1,0 +1,12 @@
+name = Humanitarianresponse Events Sectors
+description = Rename clusters to Sectors in Events
+core = 7.x
+package = HR Sectors
+dependencies[] = hr_sectors
+dependencies[] = humanitarianresponse_events
+features[features_api][] = api:1
+features[features_override_items][] = field.node-event-field_clusters
+features[features_override_items][] = views_view.events
+features[features_overrides][] = field.node-event-field_clusters.field_instance|label
+features[features_overrides][] = views_view.events.display|page|display_options|filters|field_clusters_tid|expose|label
+features[features_overrides][] = views_view.events.display|page|display_options|filters|field_clusters_tid|expose|remember_roles
